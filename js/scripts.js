@@ -18,7 +18,7 @@ function numberOfSameWord(word, text) {
   const textArray = text.split(" ");
   let numberOfOccurences = 0;
   textArray.forEach(function(text) {
-    if (word === text) {
+    if (word.toUpperCase() === text.toUpperCase()) {
       numberOfOccurences++;
     }
   });
