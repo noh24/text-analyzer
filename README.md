@@ -39,7 +39,7 @@ Expected Results: 0;
 Test2: "Check to see if word matches text using 1 word."
 Code:
   const text = "red";
-  const word = "word";
+  const word = "red";
   numberOfSameWord(word, text);
 Expected results: 1;
 ```
