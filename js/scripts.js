@@ -24,3 +24,36 @@ function numberOfSameWord(word, text) {
   });
   return numberOfOccurences;
 }
+
+
+function omitPunctuation(text) {
+  const punctuation = [",", ".", "!", "?"];
+  let newWord = text.split("");
+  punctuation.forEach(function(punct) {
+    if (newWord.includes(punct)) {
+      newWord.pop();
+    } else if (newWord.includes("'")) {
+      newWord.pop();
+      newWord.shift();
+    }
+  });
+
+  return newWord.join("");
+}
+
+function omitBleep(badWord, textPassage) {
+  let textPassageArray = textPassage.split(" ");
+  let newArray =[];
+  
+
+  textPassageArray.forEach(function(text) {
+    //"muppeteer".includes("muppeteer,")
+    if (badWord.includes(omitPunctuation(text))) {
+      //do nothing
+    } else {
+      newArray.push(omitPunctuation(text))
+    }
+  });
+
+  return newArray.join(" ");
+}
