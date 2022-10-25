@@ -63,4 +63,11 @@ code:
   const word = "REd";
   numberOfSameWord(word, text);
 Expected: 3;
+
+Test6: "It should return a word match regardless of punctuation."
+code: 
+  const text = "Red! Red. I like red, green, and yellow.";
+  const word = "Red";
+  numberOfSameWord(word, text);
+Expected: 3;
 ```
