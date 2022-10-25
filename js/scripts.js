@@ -15,5 +15,8 @@ function wordCounter(text) {
 }
 
 function numberOfSameWord(word, text) {
+  if (word === text) {
+    return 1;
+  }
   return 0;
 }
