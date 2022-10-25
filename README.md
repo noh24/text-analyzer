@@ -29,10 +29,17 @@ Expected Result: 2;
 ```
 Describe numberOfSameWord()
 
-Test: "How many times does a word occur in a text of an empty string."
+Test1: "How many times does a word occur in a text of an empty string."
 Code: 
   const text = "";
   const word = "red";
   numberOfSameWord(word, text);
 Expected Results: 0;
+
+Test2: "Check to see if word matches text using 1 word."
+Code:
+  const text = "red";
+  const word = "word";
+  numberOfSameWord(word, text);
+Expected results: 1;
 ```
