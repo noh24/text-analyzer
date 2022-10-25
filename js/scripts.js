@@ -15,8 +15,12 @@ function wordCounter(text) {
 }
 
 function numberOfSameWord(word, text) {
-  if (word === text) {
-    return 1;
-  }
-  return 0;
+  const textArray = text.split(" ");
+  let numberOfOccurences = 0;
+  textArray.forEach(function(text) {
+    if (word === text) {
+      numberOfOccurences++;
+    }
+  });
+  return numberOfOccurences;
 }
