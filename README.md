@@ -56,4 +56,11 @@ Code:
   const word = "red";
   numberOfSameWord(word, text);
 Expected results: 4;
+
+Test5: "Word should still be counted regardless of case"
+code: 
+  const text = "red RED red blue BLUE bLuE";
+  const word = "REd";
+  numberOfSameWord(word, text);
+Expected: 3;
 ```
