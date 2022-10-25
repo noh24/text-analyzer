@@ -26,3 +26,13 @@ Test: "It should not count numbers as word."
 Code: wordCounter("hi there 7 7 7");
 Expected Result: 2;
 ```
+```
+Describe numberOfSameWord()
+
+Test: "How many times does a word occur in a text of an empty string."
+Code: 
+  const text = "";
+  const word = "red";
+  numberOfSameWord(word, text);
+Expected Results: 0;
+```
