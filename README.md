@@ -13,4 +13,8 @@ Code:
 const text = "hello there";
 wordCounter(text);
 Expected Output: 2
+
+Test: "It should return 0 for an empty string."
+Code: wordcounter("");
+Expected Output: 0
 ```
