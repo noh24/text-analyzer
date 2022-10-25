@@ -1,5 +1,4 @@
 // Business Logic
-
 function wordCounter(text) {
   let wordCount = 0;
   const textArray = text.split(" ");
@@ -13,4 +12,8 @@ function wordCounter(text) {
     }
   });
   return wordCount;
+}
+
+function numberOfSameWord(word, text) {
+  return 0;
 }
