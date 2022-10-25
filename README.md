@@ -42,4 +42,18 @@ Code:
   const word = "red";
   numberOfSameWord(word, text);
 Expected results: 1;
+
+Test3: "compare text and word that doesn't match, return 0"
+Code: 
+  const text = "red";
+  const word = "blue";
+  numberOfSameWord(word, text);
+Exected results: 0;
+
+Test4: "Should return the number of occurences of a word"
+Code:
+  const text = "red green blue purple red red red";
+  const word = "red";
+  numberOfSameWords(word, text);
+Expected results: 4;
 ```
