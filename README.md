@@ -54,6 +54,6 @@ Test4: "Should return the number of occurences of a word"
 Code:
   const text = "red green blue purple red red red";
   const word = "red";
-  numberOfSameWords(word, text);
+  numberOfSameWord(word, text);
 Expected results: 4;
 ```
