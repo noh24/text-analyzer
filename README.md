@@ -21,4 +21,8 @@ Expected Output: 0
 Test: "It should return 0 for a string that is only spaces."
 Code: wordCounter("                    ");
 Expected Result: 0
+
+Test: "It should not count numbers as word."
+Code: wordCounter("hi there 7 7 7");
+Expected Result: 2;
 ```
