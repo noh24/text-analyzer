@@ -19,6 +19,6 @@ Code: wordcounter("");
 Expected Output: 0
 
 Test: "It should return 0 for a string that is only spaces."
-Code: wordcounter("                    ");
+Code: wordCounter("                    ");
 Expected Result: 0
 ```
