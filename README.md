@@ -17,4 +17,8 @@ Expected Output: 2
 Test: "It should return 0 for an empty string."
 Code: wordcounter("");
 Expected Output: 0
+
+Test: "It should return 0 for a string that is only spaces."
+Code: wordcounter("                    ");
+Expected Result: 0
 ```
