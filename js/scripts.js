@@ -40,16 +40,35 @@ function uniqueWord(text) {
 
 function omitWord(word, text) {
   let textArray = text.split(" ");
-  let badWordArray = [];
+  let newArray = [];
+  const badWordArray = word.split(" ");
 
-  textArray.forEach(function(element) {
-    if (element.includes(word)) {
+  badWordArray.forEach(function(element) {
+    if (textArray.includes(element)) {
       let index = textArray.indexOf(element);
-      textArray.push(textArray.splice(index, 1));
+      textArray.splice(index, 1);
     }
     return textArray;
-  });
+  }); 
+  textArray.join(" ");
   console.log(textArray);
+}
+function omitWord(word, text) {
+  let textArray = text.split(" ");
+  let newArray = [];
+  const badWordArray = word.split(" ");
+
+  textArray.forEach(function(element) {
+    if (badWordArray.includes(element)) {
+      let index = textArray.indexOf(element);
+      textArray.splice(index, 1);
+      console.log(textArray);
+    }
+    console.log("hi", textArray);
+    return textArray;
+  });
+  textArray.join(" ");
+  console.log("new",textArray);
 }
 // function omitPunctuation(text) {
 //   const punctuation = [",", ".", "!", "?"];
