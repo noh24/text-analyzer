@@ -38,7 +38,7 @@ function uniqueWord(text) {
   });
 }
 
-function omitWord(word, text) {
+function omitWord1(word, text) {
   let textArray = text.split(" ");
   let newArray = [];
   const badWordArray = word.split(" ");
@@ -51,9 +51,10 @@ function omitWord(word, text) {
     return textArray;
   }); 
   textArray.join(" ");
-  console.log(textArray);
+  return textArray;
 }
-function omitWord(word, text) {
+
+function omitWord2(word, text) {
   let textArray = text.split(" ");
   let newArray = [];
   const badWordArray = word.split(" ");
@@ -62,13 +63,13 @@ function omitWord(word, text) {
     if (badWordArray.includes(element)) {
       let index = textArray.indexOf(element);
       textArray.splice(index, 1);
-      console.log(textArray);
+    } else {
+      newArray.push(element);
     }
-    console.log("hi", textArray);
     return textArray;
   });
-  textArray.join(" ");
-  console.log("new",textArray);
+  newArray.join(" ");
+  return newArray;
 }
 // function omitPunctuation(text) {
 //   const punctuation = [",", ".", "!", "?"];
