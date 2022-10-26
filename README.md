@@ -103,5 +103,5 @@ describe: omitWord();
 test: 
 code:
 const word = "zoinks muppeteer biffaroni loopdaloop";
-const text = "hello zoinks, i love muppeteer, biffaroni and loopdaloop";
+const text = "hello zoinks i love muppeteer biffaroni and loopdaloop";
 omitWord(word, text);
