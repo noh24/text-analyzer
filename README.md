@@ -70,4 +70,38 @@ code:
   const word = "Red";
   numberOfSameWord(word, text);
 Expected: 3;
+Test7: "If an empty string is passed in as a word, it should return 0."
+Code: 
+const word = "";
+const text = "red RED Red!"
+numberOfSameWord(word, text);
+Expected Output: 0;
 ```
+```
+Describe: uniqueWord();
+
+Test1: "Return 1 for one word in a string"
+Code:
+const text = "red";
+uniqueWord(text);
+Expected: 1;
+
+Test2: "Return 3 for two words, one being duplicate in a string"
+Code:
+const text = "red green";
+uniqueWord(text);
+Expected: 3;
+
+Test3: "Count a string only once in a string only"
+Code: 
+const text = "red green green";
+uniqueWord(text);
+Expected: 2;
+```
+```
+describe: omitWord();
+test: 
+code:
+const word = ["zoinks" , "muppeteer", "biffaroni", "loopdaloop"];
+const text = "hello zoinks i love muppeteer biffaroni and loopdaloop";
+omitWord(word, text);
