@@ -85,6 +85,7 @@ function presentSortedArray(array) {
   array.forEach((element) => {
     arraySortedWordOccurences.push(element[0].concat( ": " + element[1]));
   });
+  return arraySortedWordOccurences;
 }
 //function returns number of each words
 //make an array of text
